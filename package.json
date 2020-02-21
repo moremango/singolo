@@ -1,5 +1,5 @@
 {
-  "name": "singolo-1",
+  "name": "singolo",
   "version": "1.0.0",
   "description": "test task",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "singolo1"
+    "url": "singolo"
   },
   "author": "moremango",
   "license": "ISC",
