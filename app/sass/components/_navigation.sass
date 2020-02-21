@@ -1,0 +1,26 @@
+.navigation
+    display: flex
+    &__item
+        position: relative
+        margin-right: 26px
+        font-size: 12.5px
+        line-height: 9px
+        font-weight: bold
+        text-transform: uppercase
+        color: #ffffff
+        &::after
+            content: '.'
+            position: absolute
+            right: -15px
+            top: -50%
+            color: #494e62
+            pointer-events: none
+        &:hover,
+        &:focus
+            color: #f06c64
+            &::after
+                color: #494e62
+        &:last-child
+            margin-right: 0
+            &::after
+                display: none
