@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 	browserSync = require('browser-sync').create(),
 	cleanCSS = require('gulp-clean-css'),
 	sourcemaps = require('gulp-sourcemaps'),
-	path = './app/';
+	path = './assets/';
 
 const paths = {
 	styles: {
@@ -37,11 +37,11 @@ const reload = (done) => {
 const watch = () => {
 	browserSync.init({
 		server: {
-			baseDir: path,
+			baseDir: '.',
 		},
 	});
 	gulp.watch(paths.styles.src, style);
-	gulp.watch(path + '*.html', reload);
+	gulp.watch('*.html', reload);
 }
 
 exports.watch = watch;
